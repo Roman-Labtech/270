@@ -16,6 +16,15 @@
     
     <link rel="icon" href="img/icon.png">
   </head>
+  
+    <script type="text/javascript">
+    document.addEventListener("backbutton", onBackKeyDown, false);
+
+function onBackKeyDown(e) {
+   e.preventDefault();
+   alert('Back Button is Pressed!');
+}
+    </script>  
   <body onload="startTime()" class="theme-red">
     <!-- Status bar overlay for fullscreen mode-->
     <div class="statusbar-overlay"></div>
