@@ -15,16 +15,31 @@
     <link rel="stylesheet" href="css/styles.css">
     
     <link rel="icon" href="img/icon.png">
-  </head>
-  
-    <script type="text/javascript">
-    document.addEventListener("backbutton", onBackKeyDown, false);
+      <script type="text/javascript" charset="utf-8" src="cordova.js"></script>
+           <script type="text/javascript" charset="utf-8">
 
-function onBackKeyDown(e) {
-   e.preventDefault();
-   alert('Back Button is Pressed!');
-}
-    </script>  
+    // Wait for device API libraries to load
+    //
+    function onLoad() {
+        document.addEventListener("deviceready", onDeviceReady, false);
+    }
+
+    // device APIs are available
+    //
+    function onDeviceReady() {
+        // Register the event listener
+        document.addEventListener("backbutton", onBackKeyDown, false);
+    }
+
+    // Handle the back button
+    //
+    function onBackKeyDown() {
+    }
+      </script>   
+       
+  </head>
+
+
   <body onload="startTime()" class="theme-red">
     <!-- Status bar overlay for fullscreen mode-->
     <div class="statusbar-overlay"></div>
