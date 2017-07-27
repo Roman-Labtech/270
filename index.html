@@ -28,15 +28,18 @@
     //
     function onDeviceReady() {
         // Register the event listener
-        document.addEventListener("backbutton", onBackKeyDown, true);
+        document.addEventListener("backbutton", onBackKeyDown, false);
     }
 
     // Handle the back button
     //
-   // function onBackKeyDown() {
-     
+ function onBackKeyDown() {
+      e.preventDefault();
+   alert('Back Button is Pressed!');
+      alert('Back Button is Pressed 1');
+      alert('Back Button is Pressed 2');
 
-    //}
+   }
       </script>   
        
   </head>
