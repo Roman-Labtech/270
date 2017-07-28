@@ -31,5 +31,19 @@
     <preference name = "SplashScreen" value = "screen" />
     <preference name = "SplashScreenDelay" value = "7000" />
     <preference name = "SplashMaintainAspectRatio" value = "false" />
+    <splash src="img/screen.jpg" />
+    
+    <platform name="android">
+    <!-- you can use any density that exists in the Android project -->
+    <splash src="img/screen.jpg" density="land-hdpi"/>
+    <splash src="img/screen.jpg" density="land-ldpi"/>
+    <splash src="img/screen.jpg" density="land-mdpi"/>
+    <splash src="img/screen.jpg" density="land-xhdpi"/>
+
+    <splash src="img/screen.jpg" density="port-hdpi"/>
+    <splash src="img/screen.jpg" density="port-ldpi"/>
+    <splash src="img/screen.jpg" density="port-mdpi"/>
+    <splash src="img/screen.jpg" density="port-xhdpi"/>
+</platform>
    <!-- <splash src="/img/i-f7-material.png"/>-->
 </widget>
