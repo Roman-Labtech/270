@@ -141,7 +141,7 @@ function check()
      /*2mm soplo*/ 
 		
     var val;
-    val = Number.parseInt(ds)*10;
+    val = Number.parseInt(ds);
     var valsumm;     
  	valsumm=(Math.pow(10,(-7)))*(4.2520009)*(Math.pow(val,3)); 
     valsumm=valsumm+(Math.pow(10,(-4)))*(4.280918)*(Math.pow(val,2))*(-1);
@@ -149,13 +149,13 @@ function check()
 	valsumm=valsumm-33.6068923;
 	document.MyForm.resultpole.value=Math.round(valsumm); 	 
     document.MyForm.stopwatch4x.value=val; 
-	document.MyForm.stopwatch2x.value=1; 		 
+	document.MyForm.stopwatch3x.value=1; 		 
 	main=valsumm; 
      }
 	 /*4mm soplo*/
          if (variant[1].checked==true){
 	     var val;
-     val = Number.parseInt(ds)*10;
+     val = Number.parseInt(ds);
      var valsumm;     
  	valsumm=(Math.pow(10,(-4)))*(2.1203522)*(Math.pow(val,2)); 
     valsumm=valsumm+(Math.pow(10,(-6)))*(1.112638)*(Math.pow(val,3))*(-1);
@@ -163,14 +163,14 @@ function check()
 	valsumm=valsumm-43.5523435;
 	document.MyForm.resultpole.value=Math.round(valsumm); 	    
     document.MyForm.stopwatch4x.value=valsumm; 
-	document.MyForm.stopwatch2x.value=2; 
+	document.MyForm.stopwatch3x.value=2; 
 	main=valsumm; 
 		 
           }
 	 /*6mm soplo*/
          if (variant[2].checked==true){
     	     var val;
-     val = Number.parseInt(ds)*10;
+     val = Number.parseInt(ds);
     var valsumm;     
  	valsumm=(Math.pow(10,(-5)))*(9.1782117)*(Math.pow(val,3)); 
     valsumm=valsumm+(0.0184844)*(Math.pow(val,2))*(-1);
@@ -178,9 +178,12 @@ function check()
 	valsumm=valsumm-76.4323174;
  	document.MyForm.resultpole.value=Math.round(valsumm); 	   
     document.MyForm.stopwatch4x.value=valsumm; 
-	document.MyForm.stopwatch2x.value=3; 		 
+	document.MyForm.stopwatch3x.value=3; 		 
 	main=valsumm; 		 
           }
+     
+   (9.1782117*10^(-5))*x^3-0.0184844*x^2+21.498038*x-76.4323174
+     (9.1782117*10^(-5))*x^3-0.0184844*x^2+21.498038*x-76.4323174
 }; 
 
 function ChangeList(){
