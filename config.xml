@@ -32,9 +32,9 @@
    
 
 
-<plugin spce="https://github.com/apache/cordova-plugin-splashscreen" source="git"/>
+<plugin src="https://github.com/apache/cordova-plugin-splashscreen" source="git"/>
   
-    
+
     <preference name="AutoHideSplashScreen" value="true" />
     <preference name = "SplashScreen" value = "screen" />
     <preference name = "SplashScreenDelay" value = "3000" />
