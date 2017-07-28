@@ -50,7 +50,7 @@
     <splash src="img/screen.png" density="port-ldpi"/>
     <splash src="img/screen.png" density="port-mdpi"/>
     <splash src="img/screen.png" density="port-xhdpi"/>
-    <icon src="icon.png" />
+    <icon src="img/logo.jpg"/>
 </platform>
    <!-- <splash src="/img/i-f7-material.png"/>-->
    	
