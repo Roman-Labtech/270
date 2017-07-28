@@ -25,14 +25,22 @@
         <preference name="BackupWebStorage" value="none" />
     </platform>
     <preference name="DisallowOverscroll" value="true" />
-    <plugin name="cordova-plugin-whitelist" spec="~1.2.0" />
-    <plugin name="cordova-plugin-console" spec="~1.0.1" />
-    <plugin name="cordova-plugin-statusbar" spec="~1.0.1" />
+
+<plugin name="cordova-plugin-console" spec="1.0.7" />
+<plugin name="cordova-plugin-statusbar" spec="1.0.1" />
+<plugin name="cordova-plugin-whitelist" spec="1.2.2" />
+   
+
+
+<plugin spce="https://github.com/apache/cordova-plugin-splashscreen.git" source="git"/>
+  
     
+    <preference name="AutoHideSplashScreen" value="true" />
     <preference name = "SplashScreen" value = "screen" />
-    <preference name = "SplashScreenDelay" value = "7000" />
-    <preference name = "SplashMaintainAspectRatio" value = "false" />
-    <splash src="img/screen.png" />
+    <preference name = "SplashScreenDelay" value = "3000" />
+    
+    <preference name = "SplashMaintainAspectRatio" value = "true" />
+    <splash src="res/screen.png" />
     
     <platform name="android">
     <!-- you can use any density that exists in the Android project -->
@@ -45,6 +53,9 @@
     <splash src="img/screen.png" density="port-ldpi"/>
     <splash src="img/screen.png" density="port-mdpi"/>
     <splash src="img/screen.png" density="port-xhdpi"/>
+    <icon src="icon.png" />
 </platform>
    <!-- <splash src="/img/i-f7-material.png"/>-->
+   	
+
 </widget>
