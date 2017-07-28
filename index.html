@@ -13,10 +13,9 @@
     <link href="http://fonts.googleapis.com/css?family=Roboto:400,300,500,700" rel="stylesheet" type="text/css">
     <link rel="stylesheet" href="css/material-icons.css">
     <link rel="stylesheet" href="css/styles.css">
-    
     <link rel="icon" href="img/icon.png">
     <script type="text/javascript" charset="utf-8" src="cordova.js"></script>
-           <script type="text/javascript" charset="utf-8">
+    <script type="text/javascript" charset="utf-8">
 
     // Wait for device API libraries to load
     //
@@ -33,21 +32,15 @@
 
     // Handle the back button
     //
- function onBackKeyDown() {
-      e.preventDefault();
-   alert('Back Button is Pressed!');
-      alert('Back Button is Pressed 1');
-      alert('Back Button is Pressed 2');
+    function onBackKeyDown() {
+    }
 
-   }
-               
-               
                
 
 
-  function exitFromApp()
+    function exitFromApp()
        {
-            navigator.app.exitApp();
+           navigator.app.exitApp();
        }               
                
       </script>   
@@ -55,7 +48,7 @@
   </head>
 
 
-  <body onload="startTime()" class="theme-red">
+  <body onload="startTime()" class="theme-red" onload="onLoad()">
     <!-- Status bar overlay for fullscreen mode-->
     <div class="statusbar-overlay"></div>
     <!-- Panels overlay-->
