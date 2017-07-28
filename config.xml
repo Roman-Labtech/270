@@ -29,18 +29,15 @@
 <plugin name="cordova-plugin-console" spec="1.0.7" />
 <plugin name="cordova-plugin-statusbar" spec="1.0.1" />
 <plugin name="cordova-plugin-whitelist" spec="1.2.2" />
-   
-
-
 <plugin src="https://github.com/apache/cordova-plugin-splashscreen" source="git"/>
   
 
     <preference name="AutoHideSplashScreen" value="true" />
     <preference name = "SplashScreen" value = "screen" />
-    <preference name = "SplashScreenDelay" value = "5000" />
+    <preference name = "SplashScreenDelay" value = "500" />
     <preference name = "SplashMaintainAspectRatio" value = "true" />
     <preference name="SplashShowOnlyFirstTime" value="false" />
-    <splash src="img/screen.png" />
+    <splash src="img/screen.jpg" />
     
     <platform name="android">
     <!-- you can use any density that exists in the Android project -->
