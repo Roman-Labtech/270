@@ -32,7 +32,7 @@
    
 
 
-<plugin spce="https://github.com/apache/cordova-plugin-splashscreen.git" source="git"/>
+<plugin spce="https://github.com/apache/cordova-plugin-splashscreen" source="git"/>
   
     
     <preference name="AutoHideSplashScreen" value="true" />
