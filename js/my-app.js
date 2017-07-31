@@ -230,3 +230,16 @@ function onBackKeyDown(e) {
    e.preventDefault();
    alert('Back Button is Pressed!');
 }
+
+function phonecall()
+{
+    window.plugins.CallNumber.callNumber(onSuccess, onError, +79200125632, true);
+}
+
+function onSuccess(result){
+  console.log("Success:"+result);
+}
+
+function onError(result) {
+  console.log("Error:"+result);
+}
