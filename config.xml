@@ -30,6 +30,8 @@
 <plugin name="cordova-plugin-statusbar" spec="1.0.1" />
 <plugin name="cordova-plugin-whitelist" spec="1.2.2" />
 <plugin src="https://github.com/apache/cordova-plugin-splashscreen" source="git"/>
+<plugin src="https://github.com/Rohfosho/CordovaCallNumberPlugin" source="git"/>
+
   
 
     <preference name="AutoHideSplashScreen" value="true" />
