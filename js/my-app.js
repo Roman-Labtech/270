@@ -243,3 +243,15 @@ function onSuccess(result){
 function onError(result) {
   console.log("Error:"+result);
 }
+
+function ClosePanel_left(){
+$$('.panel-close').on('click', function (e) {
+        myApp.closePanel(animated);
+    });    
+  
+}
+
+
+ 
+
+ 
