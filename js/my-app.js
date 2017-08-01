@@ -228,7 +228,6 @@ document.addEventListener("backbutton", onBackKeyDown, false);
 
 function onBackKeyDown(e) {
    e.preventDefault();
-   alert('Back Button is Pressed!');
 }
 
 function phonecall()
@@ -250,6 +249,7 @@ $$('.panel-close').on('click', function (e) {
     });    
   
 }
+
 
 
  
