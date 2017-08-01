@@ -249,11 +249,6 @@ $$('.panel-close').on('click', function (e) {
 
 
 
-document.addEventListener(“backbutton”, onBackKeyDown, false);
-function onBackKeyDown() {
-//do stuff
-}
-
 
 
  
