@@ -26,12 +26,11 @@
     }
 
     // device APIs are available
-    //
-
-        
+    //    
 function onBackKeyDown(e) { 
    e.preventDefault(); 
    alert('Back Button is Pressed!'); 
+    alert('Back Button is Pressed1!');
 }
 
     
@@ -59,11 +58,11 @@ function onBackKeyDown(e) {
  
 <div class="list-block accordion-list">
   <ul>
-       <li class="accordion-item">
+    <li class="accordion-item">
         <div class="item-inner">
-         <a href="searchbar.html" class="item-content item-link">
-			 <i class="material-icons">search</i>Поиск  
-         </a>
+             <a href="searchbar.html" class="item-content item-link">
+                 <i class="material-icons">search</i>Поиск  
+             </a>
          </div>     
     </li>
     <li class="accordion-item">
@@ -81,6 +80,7 @@ function onBackKeyDown(e) {
         </div>
       </div>
     </li>
+
     <li class="accordion-item">
        <a href="viscolist.html" data-ignore-cache="true" class="close-panel" > 
         <div class="item-inner">
@@ -110,12 +110,10 @@ function onBackKeyDown(e) {
         // 'left' position to open Left panel
         myApp.openPanel('left');
     });
- 
     $$('.open-right-panel').on('click', function (e) {
         // 'right' position to open Right panel
         myApp.openPanel('right');
-    });
- 
+    }); 
     $$('.panel-close').on('click', function (e) {
         myApp.closePanel();
     });
@@ -198,7 +196,7 @@ function onBackKeyDown(e) {
           <!-- Page, data-page contains page name-->
           <div data-page="index" class="page">
             <!-- Scrollable page content-->
-            <div class="page-content swipeout">
+            <div class="page-content swipeout-content">
               <div class="content-block-title">ООО "Лабораторные Технологии"</div>
               <div class="content-block">
                 <div class="content-block-inner">
@@ -280,8 +278,8 @@ function onBackKeyDown(e) {
     <script type="text/javascript" src="js/framework7.min.js"></script>
     <!-- Path to your app js-->
     <script type="text/javascript" src="js/my-app.js"></script>
-     <script type="text/javascript" src="js/CallNumber.js"></script>
-         <script>
+    <script type="text/javascript" src="js/CallNumber.js"></script>
+    <script>
          var myApp = new Framework7({
              swipePanel: 'left'
          });
