@@ -18,6 +18,8 @@ myApp.onPageInit('about', function (page) {
     });
 });
 
+
+
 // Generate dynamic page
 var dynamicPageIndex = 0;
 function createContentPage() {
@@ -224,11 +226,6 @@ function countPow(n) {
 }
 
 
-document.addEventListener("backbutton", onBackKeyDown, false);
-
-function onBackKeyDown(e) {
-   e.preventDefault();
-}
 
 function phonecall()
 {
