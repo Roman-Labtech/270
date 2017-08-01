@@ -21,23 +21,27 @@
     // Wait for device API libraries to load
     //
     function onLoad() {
-    //document.addEventListener("backbutton", onBackKeyDown, false);  
+    document.addEventListener("backbutton", onBackKeyDown, false);  
     navigator.splashscreen.show();   
     animateNavBackIcon:true,
     pushState: true, //при переходе между экранами, чтобы работала кнопка back на android
     
-    }
+    };
 
     // device APIs are available
     //    
-    
+   
+function onBackKeyDown(e) { 
+   e.preventDefault(); 
+   alert('Back Button is Pressed1!'); 
+}
 
-    function exitFromApp()
+     function exitFromApp()
        {
            navigator.app.exitApp();
-       }               
+       };               
                
-      </script>   
+    </script>   
        
   </head>
 
