@@ -247,7 +247,7 @@ $$('.panel-close').on('click', function (e) {
   
 }
 
-document.addEventListener("backbutton", onBackKeyDown, false);  
+document.addEventListener("backbutton", onBackKeyDown, true);  
 function onBackKeyDown(e) { 
    e.preventDefault(); 
    alert('11Back Button is Pressed!'); 
