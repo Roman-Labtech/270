@@ -22,18 +22,13 @@
     //
     function onLoad() {
     navigator.splashscreen.show();   
-    animateNavBackIcon:true;
-    navigator.app.onBackKeyDown();    
+    animateNavBackIcon:true; 
         
     };
 
     // device APIs are available
     //    
    
-    function onBackKeyDown() { 
-    navigator.app.preventDefault();
-}
-
      function exitFromApp()
        {
            navigator.app.exitApp();
@@ -102,7 +97,6 @@
    	
    	<script>
     var myApp = new Framework7();
- 
     var $$ = Dom7;
  
     $$('.open-left-panel').on('click', function (e) {
@@ -133,12 +127,13 @@
         <a href="question.html" data-ignore-cache="true">
 			<div class="item-inner">
 				<div class="item-title mainlinks">		 
-		  <i class="material-icons icon-settings">help_outline</i>Справка</div>       
+		  <i class="material-icons icon-settings">help_outline</i>
+		  Справка</div>       
 			 </div>
          </a>       
     </li>
     
-       	 <li class="accordion-item">
+      <li class="accordion-item">
         <a href="tel:+1234567" onclick="phonecall()" data-ignore-cache="true">
 			<div class="item-inner">
 				<div class="item-title mainlinks">		 
@@ -146,6 +141,27 @@
                 Позвонить нам   </div>       
 			 </div>
          </a>       
+      </li>
+          <li class="accordion-item">
+        <div class="item-inner">
+             <a href="searchbar.html" class="item-content item-link">
+                 <i class="material-icons">search</i>Поиск  
+             </a>
+         </div>     
+    </li>
+        <li class="accordion-item">
+        <div class="item-inner">
+             <a href="searchbar.html" class="item-content item-link">
+                 <i class="material-icons">search</i>Поиск  
+             </a>
+         </div>     
+    </li>
+        <li class="accordion-item">
+        <div class="item-inner">
+             <a href="searchbar.html" class="item-content item-link">
+                 <i class="material-icons">search</i>Поиск  
+             </a>
+         </div>     
     </li>
    	
    	  	
