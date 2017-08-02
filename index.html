@@ -25,12 +25,21 @@
     navigator.splashscreen.show();   
     animateNavBackIcon:true; 
     pushState: true;
+    document.addEventListener("deviceready", onDeviceReady, false);
         
     };
 
     // device APIs are available
     //    
-   
+    function onDeviceReady() {
+        // Register the event listener
+    document.addEventListener("backbutton", onBackKeyDown, false);
+    };
+    function onBackKeyDown() {
+    
+    alert("123");
+    }
+        
      function exitFromApp()
        {
            navigator.app.exitApp();
