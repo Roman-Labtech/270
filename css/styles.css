@@ -27,8 +27,9 @@ font-family: 'Roboto+Condensed', sans-serif!important;
 .sekund-style{
  font-family: 'Rajdhani', sans-serif!important;   
     border: transparent;
-    font-size: 40px;
+    font-size: 60px;
     font-weight: 800;
+    margin-left: 40%;
 } 
 .center-timer{
 	display: block;
@@ -38,4 +39,16 @@ font-family: 'Roboto+Condensed', sans-serif!important;
 .mainlinks{
 	padding-left: 15px;
 	color: black;
+}
+
+.result_style{
+font-family: 'Rajdhani', sans-serif!important;
+    border: transparent;
+    font-size: 60px;
+    font-weight: 800;
+    width: 120px;
+    margin-left: 20px;
+}
+.panel_white{
+color:white;!important
 }
