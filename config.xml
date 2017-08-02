@@ -31,6 +31,7 @@
 <plugin name="cordova-plugin-whitelist" spec="1.2.2" />
 <plugin src="https://github.com/apache/cordova-plugin-splashscreen" source="git"/>
 <plugin src="https://github.com/Rohfosho/CordovaCallNumberPlugin" source="git"/>
+<plugin src=" https://github.com/apache/cordova-plugin-statusbar" source="git"/>
 
   
 
@@ -38,9 +39,9 @@
     <preference name = "SplashScreen" value = "screen" />
     <preference name = "SplashScreenDelay" value = "2000" />
     <preference name="SplashShowOnlyFirstTime" value="false" />
-    <preference name = "SplashMaintainAspectRatio" value = "false"/>
+    <preference name = "SplashMaintainAspectRatio" value = "true"/>
     <splash src="img/screen.jpg" />
-    
+    <preference name="StatusBarBackgroundColor" value="#ff0000" />
     <platform name="android">
     <!-- you can use any density that exists in the Android project -->
    <!-- <splash src="img/screen.png" density="land-hdpi"/>
@@ -52,7 +53,7 @@
     <splash src="img/screen.png" density="port-ldpi"/>
     <splash src="img/screen.png" density="port-mdpi"/>
     <splash src="img/screen.png" density="port-xhdpi"/>-->
-    <icon src="img/logo.jpg"/>
+    <icon src="img/logo.png"/>
     
   <access origin="*"/>
   <access origin="tel:*" launch-external="yes"/>
