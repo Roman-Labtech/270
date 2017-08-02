@@ -62,7 +62,7 @@ function ClearСlock() {
 	init=0;
 	readout='00:00.00'; 
 	document.MyForm.stopwatch.value=readout; 
-    document.MyForm.resultpole.value="";
+    document.MyForm.resultpole.value=readout;
 } 
 //функция для старта секундомера
      var timerbig
@@ -230,7 +230,7 @@ function countPow(n) {
 
 function phonecall()
 {
-    window.plugins.CallNumber.callNumber(onSuccess, onError, +78313367613, true);
+    window.plugins.CallNumber.callNumber(onSuccess, onError,88313367613, true);
 }
 
 function onSuccess(result){
