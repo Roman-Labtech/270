@@ -19,15 +19,10 @@ alert("111");
     <div class="content-block-title">Калькулятор вязкости</div>
     <div class="content-block">
      <img src="img/vz246.jpg" style="width:50%;margin:auto;"><br>
-      <p>Для измерения вязкости жидкости вискозиметром ВЗ-246 и ВЗ-4 необходимо<br>
-      1. Выбрать диаметр сопла вискозиметра </p>
+      <p>Для измерения вязкости жидкости вискозиметром ВЗ-246 и ВЗ-4 необходимо</p><br>
+        <h3>1. Выбрать диаметр сопла вискозиметра</h3> 
       
 
-
-
-
-  <input type="button" onclick="countPow(3)" value="Узнать 5 степеней числа!"/>
-    
                                                       
                                                                                                       
                                                                                                                                                                                                       
@@ -38,7 +33,7 @@ alert("111");
     <li>
       <label class="label-radio item-content">
         <!-- Checked by default -->
-        <input type="radio" name="my-radio" id="CheckBox1" value="2mm" checked="checked" onclick="check()" alt="Books">
+        <input type="radio" name="my-radio" id="CheckBox1" value="2mm" checked="checked" onclick="check()">
         <div class="item-media">
           <i class="icon icon-form-radio"></i>
         </div>
@@ -73,13 +68,27 @@ alert("111");
   
   </ul>
 </div>  
-
-
 </form> 
 
-     
+
+        <h3>2. Внести значения температуры при проведении измерений</h3>
+          
+
+     <form id="tempForm" class="list-block">
+
+      <div class="item-content">
+        <div class="item-inner">
+          <div class="item-input">
+            <input type="text" name="temp" placeholder="Температура в градусах Цельсия">
+          </div>
+        </div>
+      </div>
+
+</form>
+   
+        
       
-    <p>2. Запустить таймер</p>  
+  <h3>3. Запустить таймер</h3>  
        <form name=MyForm>       
   <div class="list-block">
    <br>
@@ -89,9 +98,11 @@ alert("111");
   
     
    
-<div class="col-100 center-timer">  <input name=stopwatch size=20 value="00:00:00" class="redcolor sekund-style center"></div>
-    
-    
+<div class="center-timer">  
+<div class="sec">
+  <input name=stopwatch size=20 value="00:00:00" class="redcolor sekund-style center"></div>    
+</div>
+     
   
 </div>
 	
@@ -107,21 +118,18 @@ alert("111");
    <!-- <img  id="change1" name="change1" src="img/pic1.png" onclick="swapImage1();ClearСlock();alert(fff);" />-->
     <!--	<img  id="change2" name="change2" src="/img/pic3.png" onclick="swapImage1();ClearСlock()" />-->
      <input type=button value="Обнулить" onclick="ClearСlock()" class="button button-big button-fill color-red">
-     
-	 
-     
-    </div>
+      </div>
     </div>  
      <br>
-	<input type="button" value="ЗАПУСК" onclick="message1()"><br>
-	<input name=stopwatch3x><br>	
-	<input name="stopwatch4x"><br>
-	<input name="resultpole"><br>
+	<input name=stopwatch3x>
+	
+	<!--<input name="stopwatch4x"><br>-->
+	
 	
 	
 	
   
-  Конечный результат 
+      <h3>4. Конечный результат: <input name="resultpole" class="redcolor result_style center"> сСтокс</h3>
  <!-- <input name="resultpole" class="redcolor sekund-style center"> сСтокс<br>-->
   <br><br><br><br>
 </div>  

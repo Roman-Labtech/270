@@ -12,6 +12,7 @@
     <link rel="stylesheet" href="css/framework7.material.css">
     <link rel="stylesheet" href="css/framework7.material.colors.css">
     <link href="http://fonts.googleapis.com/css?family=Roboto:400,300,500,700" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Rajdhani" rel="stylesheet"> 
     <link rel="stylesheet" href="css/material-icons.css">
     <link rel="stylesheet" href="css/styles.css">
     <link rel="icon" href="img/icon.png">
@@ -40,7 +41,7 @@
   </head>
 
 
-  <body onload="startTime()" class="theme-deeppurple" onload="onLoad()">
+  <body onload="startTime()" class="theme-red" onload="onLoad()">
     <!-- Status bar overlay for fullscreen mode-->
     <div class="statusbar-overlay"></div>
     <!-- Panels overlay-->
@@ -54,16 +55,16 @@
 <div class="list-block accordion-list">
   <ul>
     <li class="accordion-item">
-        <div class="item-inner">
-             <a href="searchbar.html" class="item-content item-link">
-                 <i class="material-icons">search</i>Поиск  
+        <div class="item-inner panel_white">
+             <a href="searchbar.html" class="item-content item-link close-panel panel_white">
+                 <i class="material-icons panel_white">search</i>Поиск  
              </a>
          </div>     
     </li>
     <li class="accordion-item">
-       <a href="#" class="item-content item-link">
+       <a href="#" class="item-content item-link panel_white">
         <div class="item-inner">
-          <div class="item-title">Пробоотборники</div>
+          <div class="item-title panel_white">Пробоотборники</div>
         </div></a>
      <div class="accordion-item-content">
         <div class="content-block">
@@ -79,7 +80,7 @@
     <li class="accordion-item">
        <a href="viscolist.html" data-ignore-cache="true" class="close-panel" > 
         <div class="item-inner">
-          <div class="item-title mainlinks">
+          <div class="item-title mainlinks panel_white">
 			Вискозиметры
           </div>
         </div>
@@ -89,7 +90,7 @@
     <li class="accordion-item">
         <a href="microlist.html" data-ignore-cache="true" class="close-panel">
         <div class="item-inner">
-				<div class="item-title mainlinks">
+				<div class="item-title mainlinks panel_white">
 				  Микрошприцы
 				</div>          
 			 </div>
@@ -115,9 +116,9 @@
   </script>
    	
    	<li class="accordion-item">
-        <a href="color-themes.html" data-ignore-cache="true">
+        <a href="color-themes.html" data-ignore-cache="true" class="close-panel">
 			<div class="item-inner">
-				<div class="item-title mainlinks">
+				<div class="item-title mainlinks panel_white">
 				  <div class="item-title"><b>Калькулятор ВЗ-246</b></div>
 				</div>          
 			 </div>
@@ -128,7 +129,7 @@
       <li class="accordion-item">
         <a href="tel:+1234567" onclick="phonecall()" data-ignore-cache="true">
 			<div class="item-inner">
-				<div class="item-title mainlinks">		 
+				<div class="item-title mainlinks panel_white">		 
 		  <i class="material-icons icon-settings">call</i>
                 Позвонить нам   </div>       
 			 </div>
@@ -142,7 +143,7 @@
 			<div class="item-inner">
 			  <a href="#" data-ignore-cache="true" class="graylink" onClick="exitFromApp()">
 
-				<div class="item-title mainlinks">		 
+				<div class="item-title mainlinks panel_white">		 
 		      <i class="material-icons icon-settings">close</i> Выход      
                 </div>
          </a> 
@@ -150,8 +151,8 @@
    	</li>
    	 <li class="accordion-item">
 			<div class="item-inner">
-			  <a href="question.html" data-ignore-cache="true" class="graylink">
-				<div class="item-title mainlinks">		 
+			  <a href="question.html" data-ignore-cache="true" class="graylink close-panel">
+				<div class="item-title mainlinks panel_white">		 
 		  <i class="material-icons icon-settings">help</i>
 		  Справка</div>   
 		       </a>      
@@ -183,9 +184,14 @@
         <div class="navbar">
           <div class="navbar-inner">
             <!-- We have home navbar without left link-->
+            <div class="left">
+           
+              </div>
             <div class="center sliding"></div>
             <div class="right">
-              <!-- Right link contains only icon - additional "icon-only" class--><a href="#" class="link icon-only open-panel"> <i class="icon icon-bars"></i></a>
+              <!-- Right link contains only icon - additional "icon-only" class-->
+                <a href="#" class="link icon-only open-panel"> 
+              <i class="icon icon-bars"></i></a>
             </div>
           </div>
         </div>
@@ -200,11 +206,10 @@
                 <div class="content-block-inner">
                        <p>
                   	Наша организация ООО "Лабораторные Технологии" предлагает своим клиентам такое оборудование, как микрошприцы, различные пробоотборники и оборудование к ним, емкости из нержавеющей стали. 
-                  	  <p>
-     <input type=button value="Запуск Браузера" name="BROWSER" onclick="buttonweb()">
-	    
+                    </p><p>
+     
 	</p>	
-                  </p><br>
+                 <br>
                   
                   
                   <div class="list-block">
@@ -213,17 +218,7 @@
                <br><br>
                 
                   
-                  <form action="send-here.html" method="GET" class="ajax-submit-onchange">
-         <div class="item-inner"> 
-                <div class="item-title label">E-mail</div>
-                <div class="item-input">
-                  <input type="email" placeholder="E-mail"/>
-                </div>
-                
-                 <p><input type="submit"></p>
-              </div>
-             
-    </form>
+           
                   <br>
 
                   
@@ -232,16 +227,8 @@
               </div>
              
     
-     <div class="content-block-title">Side panels</div>
-              <div class="content-block">
-                <div class="row">
-                  <div class="col-50">
-                  <a href="#" data-panel="left" class="button open-panel">Left Panel</a>
-                  </div>
-                  <div class="col-50"><a href="#" data-panel="right" class="button open-panel">Right Panel</a>
-                  </div>
-                </div>
-              </div>
+    
+       
             </div>
           </div>
         </div>
