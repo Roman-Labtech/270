@@ -62,6 +62,7 @@ function ClearСlock() {
 	init=0;
 	readout='00:00.00'; 
 	document.MyForm.stopwatch.value=readout; 
+    document.MyForm.resultpole.value="";
 } 
 //функция для старта секундомера
      var timerbig
@@ -150,8 +151,8 @@ function check()
 	valsumm=valsumm+val*(0.5686503); 	 
 	valsumm=valsumm-33.6068923;
 	document.MyForm.resultpole.value=Math.round(valsumm); 	 
-    document.MyForm.stopwatch4x.value=val; 
-	document.MyForm.stopwatch3x.value=1; 		 
+   // document.MyForm.stopwatch4x.value=valsumm; 
+		 
 	main=valsumm; 
      }
 	 /*4mm soplo*/
@@ -164,8 +165,8 @@ function check()
 	valsumm=valsumm+val*(4.7393057); 	 
 	valsumm=valsumm-43.5523435;
 	document.MyForm.resultpole.value=Math.round(valsumm); 	    
-    document.MyForm.stopwatch4x.value=valsumm; 
-	document.MyForm.stopwatch3x.value=2; 
+  //  document.MyForm.stopwatch4x.value=valsumm; 
+
 	main=valsumm; 
 		 
           }
@@ -179,8 +180,8 @@ function check()
 	valsumm=valsumm+val*(21.498038); 	 
 	valsumm=valsumm-76.4323174;
  	document.MyForm.resultpole.value=Math.round(valsumm); 	   
-    document.MyForm.stopwatch4x.value=valsumm; 
-	document.MyForm.stopwatch3x.value=3; 		 
+   // document.MyForm.stopwatch4x.value=valsumm; 
+		 
 	main=valsumm; 		 
           }
      
