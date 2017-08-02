@@ -18,14 +18,13 @@ myApp.onPageInit('about', function (page) {
     });
 });
 
-function onDeviceReady() {
-        // Register the event listener
-    document.addEventListener("backbutton", onBackKeyDown, false);
-    };
-    function onBackKeyDown() {
-    
-    alert("123");
-    };
+  
+
+document.addEventListener("backbutton", onBackKeyDown, false);  
+function onBackKeyDown(e) { 
+   e.preventDefault(); 
+   alert('123'); 
+}
 
 // Generate dynamic page
 var dynamicPageIndex = 0;
