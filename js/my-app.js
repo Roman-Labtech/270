@@ -1,5 +1,8 @@
 // Initialize your app
-var myApp = new Framework7();
+var myApp = new Framework7({
+    pushState: true,
+    cache:false
+});
 
 // Export selectors engine
 var $$ = Dom7;
@@ -19,19 +22,11 @@ myApp.onPageInit('about', function (page) {
 });
 
 document.addEventListener("deviceready", onDeviceReady, false); 
-function onDeviceReady() { document.addEventListener("backbutton", onBackKeyDown, false); } 
+function onDeviceReady() { 
+    document.addEventListener("backbutton", onBackKeyDown, false); } 
 function onBackKeyDown() { mainView.router.back(); }
 
-//function onDeviceReady(){
-//document.addEventListener("backbutton", onBackKeyDown, false);  
-//};  
 
-//document.addEventListener("backbutton", onBackKeyDown, false);  
-//function onBackKeyDown(e) { 
-//   e.preventDefault(); 
-  // alert('123'); 
-//    navigator.app.backHistory()
-//}
 
 // Generate dynamic page
 var dynamicPageIndex = 0;
@@ -75,7 +70,7 @@ function ClearСlock() {
 	init=0;
 	readout='00:00.00'; 
 	document.MyForm.stopwatch.value=readout; 
-    document.MyForm.resultpole.value=readout;
+    document.MyForm.resultpole.value="";
 } 
 //функция для старта секундомера
      var timerbig
