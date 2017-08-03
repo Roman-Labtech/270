@@ -24,10 +24,7 @@ myApp.onPageInit('about', function (page) {
 document.addEventListener("deviceready", onDeviceReady, false); 
 function onDeviceReady() { 
     document.addEventListener("backbutton", onBackKeyDown, false); } 
-function onBackKeyDown() 
-{mainView.router.back(
-); 
-}
+function onBackKeyDown() { mainView.router.back(); }
 
 
 
