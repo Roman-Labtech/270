@@ -18,9 +18,11 @@ myApp.onPageInit('about', function (page) {
     });
 });
 
-  
-
+function onDeviceReady(){
 document.addEventListener("backbutton", onBackKeyDown, false);  
+};  
+
+//document.addEventListener("backbutton", onBackKeyDown, false);  
 function onBackKeyDown(e) { 
    e.preventDefault(); 
    alert('123'); 
