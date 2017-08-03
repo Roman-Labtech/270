@@ -26,6 +26,7 @@ document.addEventListener("backbutton", onBackKeyDown, false);
 function onBackKeyDown(e) { 
    e.preventDefault(); 
    alert('123'); 
+    navigator.app.backHistory()
 }
 
 // Generate dynamic page
