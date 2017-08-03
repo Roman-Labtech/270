@@ -25,20 +25,28 @@
     navigator.splashscreen.show();   
     animateNavBackIcon:true; 
     pushState: true;
-    document.addEventListener("deviceready", onDeviceReady, false);
-        
+    document.addEventListener("deviceready", onDeviceReady, false);    
     };
 
     // device APIs are available
     //    
-    
-        
-     function exitFromApp()
+    </script> 
+    <script type="text/javascript" charset="utf-8" src="js/cordova.js">   </script>
+     
+       <script type="text/javascript" charset="utf-8" src="js/cordova_plugins.js"></script>
+        <script> document.addEventListener("deviceready", appReady, false); 
+            function appReady(){ 
+                document.addEventListener("backbutton", 
+                                                           function(e){ var page=myApp.getCurrentView().activePage; myApp.hidePreloader(); if(page.name=="home"){ e.preventDefault(); if(confirm("Do you want to Exit!")) { navigator.app.clearHistory(); navigator.app.exitApp(); } } else { navigator.app.backHistory() } }, false); } </script>
+      <script>
+          function exitFromApp()
        {
            navigator.app.exitApp();
-       };               
+       }; 
+      </script>  
                
-    </script>   
+               
+    
        
   </head>
 
