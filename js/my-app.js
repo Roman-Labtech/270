@@ -23,7 +23,9 @@ myApp.onPageInit('about', function (page) {
 
 document.addEventListener("deviceready", onDeviceReady, false); 
 function onDeviceReady() { 
-    document.addEventListener("backbutton", onBackKeyDown, false); } 
+    document.addEventListener("backbutton", onBackKeyDown, false);
+    document.getElementById("openBrowser").addEventListener("click", openBrowser);
+} 
 function onBackKeyDown() { mainView.router.back(); }
 
 
@@ -261,10 +263,10 @@ function buttonweb(){
   document.getElementById("openBrowser").addEventListener("click", openBrowser);  
 }
 
-
+document.getElementById("openBrowser").addEventListener("click", openBrowser);
 
 function openBrowser() {
-   var url = 'https://cordova.apache.org';
+   var url = 'http://lab-shop.ru';
    var target = '_blank';
    var options = "location = yes"
    var ref = cordova.InAppBrowser.open(url, target, options);
@@ -290,4 +292,4 @@ function openBrowser() {
       console.log('Browser is closed...')
    }
 }
- 
+
