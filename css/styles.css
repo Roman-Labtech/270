@@ -18,7 +18,7 @@
 .icon-settings{
     display: block!important;
     float: left!important;
-    margin-top: -3px!important;
+    margin-top: -1px!important;
 	padding-right: 5px!important;}
 body{
 font-family: 'Roboto+Condensed', sans-serif!important;    
@@ -50,4 +50,13 @@ font-family: 'Rajdhani', sans-serif!important;
 }
 .panel_white{
 color:white;!important
+}
+.icon_green{
+    color: green;
+}
+.icon_red{
+    color:red;
+}
+.icon_blue{
+    color:#0845fa;
 }
