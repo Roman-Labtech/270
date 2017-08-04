@@ -31,7 +31,8 @@
 <plugin name="cordova-plugin-whitelist" spec="1.2.2" />
 <plugin src="https://github.com/apache/cordova-plugin-splashscreen" source="git"/>
 <plugin src="https://github.com/Rohfosho/CordovaCallNumberPlugin" source="git"/>
-<plugin src=" https://github.com/apache/cordova-plugin-statusbar" source="git"/>
+<plugin src="https://github.com/apache/cordova-plugin-statusbar" source="git"/>
+<plugin src="https://github.com/apache/cordova-plugin-inappbrowser" source="git"/>
 
   
 
