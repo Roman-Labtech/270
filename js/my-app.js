@@ -320,15 +320,8 @@ function scanner(){
 }
 
 function QRAlert() {
-   var message = restext;
-   var title = "QR сканер";
- 
-   navigator.notification.alert(message, alertCallback, title, buttonName);
-   
-   function alertCallback() {
-      console.log("Alert is Dismissed!");
-   }
-    
+    var title = "QR сканер";
+    alert(restext);
     
 }
 
