@@ -33,6 +33,8 @@
 <plugin src="https://github.com/Rohfosho/CordovaCallNumberPlugin" source="git"/>
 <plugin src="https://github.com/apache/cordova-plugin-statusbar" source="git"/>
 <plugin src="https://github.com/apache/cordova-plugin-inappbrowser" source="git"/>
+<plugin src="https://github.com/bitpay/cordova-plugin-qrscanner" source="git"/> 
+<plugin src="https://github.com/phonegap/phonegap-plugin-barcodescanner" source="git"/>   
 
   
 
