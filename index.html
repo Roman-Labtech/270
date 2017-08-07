@@ -254,28 +254,8 @@
    
     <input type="button" onclick="scanner()" value="QRSCANNER1">
      <input type="button" onclick="QRAlert()" value="QRSCANNER2">
-        <input type="button" onclick="alertDismissed()" value="QRSCANNER3">
+        <input type="button" onclick="showAlert()" value="QRSCANNER3">
 
-    
-<script type="text/javascript">
-  var callback = function(err, contents){
-  if(err){
-    console.error(err._message);
-  }
-  alert('The QR Code contains: ' + contents);
-};
- 
-QRScanner.scan(callback);
-                        
-QRScanner.show(function(status){
-  console.log(status);
-});
-                        
-QRScanner.hide(function(status){
-  console.log(status);
-});                        
-                        
-                    </script>
     
    		
                  <br>
