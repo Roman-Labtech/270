@@ -300,8 +300,7 @@ function scanner(){
       function (result) {
           
           
-          var restext=result.text;
-          alert("QR код \n" + result.text);
+         
            navigator.notification.alert(
             result.text,  // message
             alertDismissed,         // callback
@@ -320,11 +319,7 @@ function scanner(){
  );
 }
 
-function QRAlert() {
-    var title = "QR сканер";
-    alert(restext);
-    
-}
+
 
 
  // alert dialog dismissed
@@ -334,12 +329,4 @@ function QRAlert() {
 
     // Show a custom alert
     //
-    
-     function showAlert() {
-        navigator.notification.alert(
-            result.text,  // message
-            alertDismissed,         // callback
-            'QR код',            // title
-            'ОК'                  // buttonName
-        );
-    }
+ 
