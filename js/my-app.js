@@ -308,7 +308,7 @@ function scanner(){
       function (error) {
           alert("Scanning failed: " + error);
       }
-     function QRAlert(result.text)
+   
      
  );
 }
