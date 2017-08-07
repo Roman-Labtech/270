@@ -25,7 +25,8 @@ document.addEventListener("deviceready", onDeviceReady, false);
 function onDeviceReady() { 
     document.addEventListener("backbutton", onBackKeyDown, false);
     document.getElementById("openBrowser").addEventListener("click", openBrowser);
-    document.getElementById("QRAlert").addEventListener("click", dialogAlert);
+    document.getElementById("QRalert").addEventListener("click", dialogAlert);
+    console.log(navigator.notification);
 } 
 function onBackKeyDown() { mainView.router.back(); }
 
@@ -301,8 +302,7 @@ function scanner(){
           
           var restext=result.text;
           alert("QR код \n" + result.text);
-          alert(
-                  '"QR код \n" + result.text',  // message
+          alert("QR код \n" + result.text,  // message
     alertDismissed,         // callback
     'Game Over',            // title
     'OK'                  // buttonName
