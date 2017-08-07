@@ -304,7 +304,7 @@ function scanner(){
         
               //  "Format: " + result.format + "\n" +
             //    "Cancelled: " + result.cancelled);
-          navigator.notification.alert(result.text, alertCallback, QR код, "ОК");        
+          //navigator.notification.alert(result.text, alertCallback, QR код, "ОК");        
       }, 
       function (error) {
           alert("Scanning failed: " + error);
