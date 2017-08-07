@@ -293,3 +293,16 @@ function openBrowser() {
    }
 }
 
+function scanner(){
+ cordova.plugins.barcodeScanner.scan(
+      function (result) {
+          alert("A barcode has been scanned \n" +
+                "Result: " + result.text + "\n" +
+                "Format: " + result.format + "\n" +
+                "Cancelled: " + result.cancelled);
+      }, 
+      function (error) {
+          alert("Scanning failed: " + error);
+      }
+ );
+}
