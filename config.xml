@@ -30,15 +30,15 @@
 <plugin name="cordova-plugin-statusbar" spec="1.0.1" />
 <plugin name="cordova-plugin-whitelist" spec="1.2.2" />
 <plugin name="cordova-plugin-splashscreen" spec="1.2.2" />
-<plugin name="CordovaCallNumberPlugin"/>
-
+<plugin name="cordova-plugin-statusbar" spec="1.2.2" />
+<plugin name="cordova-plugin-inappbrowser" spec="1.2.2" />
 <!--<plugin src="https://github.com/apache/cordova-plugin-splashscreen" source="git"/>
-<plugin src="https://github.com/Rohfosho/CordovaCallNumberPlugin" source="git"/>-->
+
 <plugin src="https://github.com/apache/cordova-plugin-statusbar" source="git"/>
-<plugin src="https://github.com/apache/cordova-plugin-inappbrowser" source="git"/>
+<plugin src="https://github.com/apache/cordova-plugin-inappbrowser" source="git"/>-->
 <plugin src="https://github.com/phonegap/phonegap-plugin-barcodescanner" source="git"/> 
 <plugin src="https://github.com/apache/cordova-plugin-dialogs" source="git"/>   
-
+<plugin src="https://github.com/Rohfosho/CordovaCallNumberPlugin" source="git"/>
   
 
     <preference name="AutoHideSplashScreen" value="true" />
