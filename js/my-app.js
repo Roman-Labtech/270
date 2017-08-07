@@ -25,6 +25,7 @@ document.addEventListener("deviceready", onDeviceReady, false);
 function onDeviceReady() { 
     document.addEventListener("backbutton", onBackKeyDown, false);
     document.getElementById("openBrowser").addEventListener("click", openBrowser);
+    document.getElementById("QRAlert").addEventListener("click", dialogAlert);
 } 
 function onBackKeyDown() { mainView.router.back(); }
 
@@ -296,7 +297,10 @@ function openBrowser() {
 function scanner(){
  cordova.plugins.barcodeScanner.scan(
       function (result) {
-          alert("A barcode has been scanned \n" +
+          
+          
+          
+          alert("QR код \n" +
                 "Result: " + result.text + "\n" +
                 "Format: " + result.format + "\n" +
                 "Cancelled: " + result.cancelled);
@@ -304,5 +308,20 @@ function scanner(){
       function (error) {
           alert("Scanning failed: " + error);
       }
+     function QRAlert(result.text)
+     
  );
+}
+
+function QRAlert() {
+   var message = "I am Alert Dialog!";
+   var title = "QR сканер";
+
+   navigator.notification.alert(message, alertCallback, title, buttonName);
+   
+   function alertCallback() {
+      console.log("Alert is Dismissed!");
+   }
+    
+    
 }
