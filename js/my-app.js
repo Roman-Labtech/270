@@ -302,18 +302,19 @@ function scanner(){
           
           var restext=result.text;
           alert("QR код \n" + result.text);
-          alert("QR код \n" + result.text,  // message
-    alertDismissed,         // callback
-    'Game Over',            // title
-    'OK'                  // buttonName
-          
-              //  "Format: " + result.format + "\n" +
-            //    "Cancelled: " + result.cancelled);
-          //navigator.notification.alert(result.text, alertCallback, QR код, "ОК");        
-      )}, 
+           navigator.notification.alert(
+            result.text,  // message
+            alertDismissed,         // callback
+            'QR код',            // title
+            'ОК'                  // buttonName
+        );
+      
+      }, 
       function (error) {
           alert("Scanning failed: " + error);
       }
+
+
    
      
  );
@@ -333,12 +334,12 @@ function QRAlert() {
 
     // Show a custom alert
     //
-    function showAlert() {
+    
+     function showAlert() {
         navigator.notification.alert(
-            'You are the winner!',  // message
+            result.text,  // message
             alertDismissed,         // callback
-            'Game Over',            // title
-            'Done'                  // buttonName
+            'QR код',            // title
+            'ОК'                  // buttonName
         );
     }
-
