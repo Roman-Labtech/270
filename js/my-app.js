@@ -299,11 +299,12 @@ function scanner(){
       function (result) {
           
           
-          
-          alert("QR код \n" +
-                "Result: " + result.text + "\n" +
-                "Format: " + result.format + "\n" +
-                "Cancelled: " + result.cancelled);
+          var restext=result.text;
+          alert("QR код \n" + result.text);
+          navigator.notification.alert("result.text", alertCallback, QR код, "ОК");
+              //  "Format: " + result.format + "\n" +
+            //    "Cancelled: " + result.cancelled);
+                
       }, 
       function (error) {
           alert("Scanning failed: " + error);
@@ -314,7 +315,7 @@ function scanner(){
 }
 
 function QRAlert() {
-   var message = "I am Alert Dialog!";
+   var message = restext;
    var title = "QR сканер";
 
    navigator.notification.alert(message, alertCallback, title, buttonName);
