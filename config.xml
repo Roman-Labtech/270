@@ -34,8 +34,8 @@
 <plugin name="cordova-plugin-inappbrowser"  />
 <!--<plugin src="https://github.com/apache/cordova-plugin-splashscreen" source="git"/>
 
-<plugin src="https://github.com/apache/cordova-plugin-statusbar" source="git"/>
-<plugin src="https://github.com/apache/cordova-plugin-inappbrowser" source="git"/>-->
+<plugin src="https://github.com/apache/cordova-plugin-statusbar" source="git"/>-->
+<plugin src="https://github.com/apache/cordova-plugin-inappbrowser" source="git"/>
 <plugin src="https://github.com/phonegap/phonegap-plugin-barcodescanner" source="git"/> 
 <plugin src="https://github.com/apache/cordova-plugin-dialogs" source="git"/>   
 <plugin src="https://github.com/Rohfosho/CordovaCallNumberPlugin" source="git"/>
